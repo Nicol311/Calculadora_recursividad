@@ -45,8 +45,8 @@ class Operaciones {
     }
 //Verificar si la palabra ingresada es un palíndromo
     public void palindromo(Scanner entrada) {
+        System.out.print("Ingrese una palabra: ");
         if (entrada.hasNext("[a-zA-Z]+")) { // Verifica si la entrada son solo letras
-            System.out.print("Ingrese una palabra: ");
             String palabra = entrada.next();
             if (es_palindromo(palabra.toLowerCase(), 0, palabra.length() - 1)) {
                 System.out.println("\nLa palabra es un palíndromo!");
